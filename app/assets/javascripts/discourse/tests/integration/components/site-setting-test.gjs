@@ -201,6 +201,7 @@ module("Integration | Component | site-setting", function (hooks) {
     await publishToMessageBus("/site_setting/default_categories_test/process", {
       status: "enqueued",
     });
+
     assert.dom(".desc.site-setting").hasTextContaining("Update in progress");
 
     await publishToMessageBus("/site_setting/default_categories_test/process", {
@@ -233,7 +234,9 @@ module("Integration | Component | site-setting", function (hooks) {
       <template><SiteSettingComponent @setting={{self.setting}} /></template>
     );
 
-    await publishToMessageBus("/site_setting/default_tags_test/process", { status: "enqueued" });
+    await publishToMessageBus("/site_setting/default_tags_test/process", {
+      status: "enqueued",
+    });
     assert.dom(".desc.site-setting").hasTextContaining("Update in progress");
 
     await publishToMessageBus("/site_setting/default_tags_test/process", {
@@ -244,7 +247,9 @@ module("Integration | Component | site-setting", function (hooks) {
     assert.dom(".desc.site-setting").hasTextContaining("Update in progress");
     assert.dom(".desc.site-setting").hasTextContaining("10/100");
 
-    await publishToMessageBus("/site_setting/default_tags_test/process", { status: "completed" });
+    await publishToMessageBus("/site_setting/default_tags_test/process", {
+      status: "completed",
+    });
     assert.dom(".desc.site-setting").hasTextContaining("Update completed");
   });
 
@@ -264,10 +269,14 @@ module("Integration | Component | site-setting", function (hooks) {
       <template><SiteSettingComponent @setting={{self.setting}} /></template>
     );
 
-    await publishToMessageBus("/site_setting/default_tags_test/process", { status: "enqueued" });
+    await publishToMessageBus("/site_setting/default_tags_test/process", {
+      status: "enqueued",
+    });
     assert.dom(".desc.site-setting").doesNotExist();
 
-    await publishToMessageBus("/site_setting/default_tags_test/process", { status: "completed" });
+    await publishToMessageBus("/site_setting/default_tags_test/process", {
+      status: "completed",
+    });
     assert.dom(".desc.site-setting").doesNotExist();
   });
 });
