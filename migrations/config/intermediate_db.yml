@@ -106,6 +106,8 @@ schema:
         modify:
           - name: "created_at"
             nullable: false
+            datatype: blob
+            enum: avatar_type
         add:
           - name: "original_username"
             datatype: text

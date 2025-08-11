@@ -94,6 +94,9 @@
                         },
                         "nullable": {
                           "type": "boolean"
+                        },
+                        "enum": {
+                          "type": "string"
                         }
                       },
                       "additionalProperties": false,
@@ -104,12 +107,27 @@
                         {
                           "required": [
                             "datatype"
-                          ]
+                          ],
+                          "not": {
+                            "required": [
+                              "enum"
+                            ]
+                          }
                         },
                         {
                           "required": [
                             "nullable"
                           ]
+                        },
+                        {
+                          "required": [
+                            "enum"
+                          ],
+                          "not": {
+                            "required": [
+                              "datatype"
+                            ]
+                          }
                         }
                       ]
                     }
@@ -130,12 +148,36 @@
                         },
                         "max_length": {
                           "type": "integer"
+                        },
+                        "enum": {
+                          "type": "string"
                         }
                       },
                       "additionalProperties": false,
                       "required": [
-                        "name",
-                        "datatype"
+                        "name"
+                      ],
+                      "oneOf": [
+                        {
+                          "required": [
+                            "datatype"
+                          ],
+                          "not": {
+                            "required": [
+                              "enum"
+                            ]
+                          }
+                        },
+                        {
+                          "required": [
+                            "enum"
+                          ],
+                          "not": {
+                            "required": [
+                              "datatype"
+                            ]
+                          }
+                        }
                       ]
                     }
                   }

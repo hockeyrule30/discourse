@@ -86,7 +86,7 @@ module Migrations::Database::Schema
     def added_columns(config, primary_key_column_names)
       columns = config.dig(:columns, :add) || []
       columns.map do |column|
-        datatype = column[:datatype].to_sym
+        datatype = column[:enum] ? :integer : column[:datatype].to_sym
         Column.new(
           name: column[:name],
           datatype:,
