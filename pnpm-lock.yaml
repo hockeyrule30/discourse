@@ -272,6 +272,9 @@ importers:
       '@fullcalendar/list':
         specifier: ^6.1.18
         version: 6.1.18(@fullcalendar/core@6.1.18)
+      '@fullcalendar/moment-timezone':
+        specifier: ^6.1.19
+        version: 6.1.19(@fullcalendar/core@6.1.18)(moment-timezone@0.5.45)
       '@fullcalendar/rrule':
         specifier: ^6.1.18
         version: 6.1.18(@fullcalendar/core@6.1.18)(rrule@2.8.1)
@@ -2171,6 +2174,12 @@ packages:
     resolution: {integrity: sha512-XPZI50mq3HXyDQ5sT3jmqQUuwG8zQb5H14dQIUAmOHAIFRA3WpkxlzrXO0U1SrosvGySMPyyNNxvMKI1Q/jL7A==}
     peerDependencies:
       '@fullcalendar/core': ~6.1.18
+
+  '@fullcalendar/moment-timezone@6.1.19':
+    resolution: {integrity: sha512-6UOhMThdzDnh10/SPW5t5zmNq+betGebK3i7ytg2EHzlEb2EztfHJC5mbqEU2B2AoKNr2FUIonWuergYe7OVhA==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.19
+      moment-timezone: ^0.5.40
 
   '@fullcalendar/rrule@6.1.18':
     resolution: {integrity: sha512-9I3ZQgpedog1odVLOmY4zFLuIauU1gGlN67+ZmCNA12hRpcp3LPI84FSm7q2fC/7SPw5C7R3092DU35+7ooe5Q==}
@@ -10624,6 +10633,11 @@ snapshots:
   '@fullcalendar/list@6.1.18(@fullcalendar/core@6.1.18)':
     dependencies:
       '@fullcalendar/core': 6.1.18
+
+  '@fullcalendar/moment-timezone@6.1.19(@fullcalendar/core@6.1.18)(moment-timezone@0.5.45)':
+    dependencies:
+      '@fullcalendar/core': 6.1.18
+      moment-timezone: 0.5.45
 
   '@fullcalendar/rrule@6.1.18(@fullcalendar/core@6.1.18)(rrule@2.8.1)':
     dependencies:
