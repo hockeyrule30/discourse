@@ -110,6 +110,105 @@ ja:
       placeholder: 日付
       from_placeholder: "開始日"
       to_placeholder: "終了日"
+    languages:
+      ar:
+        name: アラビア語
+      be:
+        name: ベラルーシ語
+      bg:
+        name: ブルガリア語
+      bs_BA:
+        name: ボスニア語
+      ca:
+        name: カタルーニャ語
+      cs:
+        name: チェコ語
+      da:
+        name: デンマーク語
+      de:
+        name: ドイツ語
+      el:
+        name: ギリシャ語
+      en:
+        name: 英語 (米国)
+      en_GB:
+        name: 英語 (英国)
+      es:
+        name: スペイン語
+      et:
+        name: エストニア語
+      fa_IR:
+        name: ペルシャ語
+      fi:
+        name: フィンランド語
+      fr:
+        name: フランス語
+      gl:
+        name: ガリシア語
+      he:
+        name: ヘブライ語
+      hr:
+        name: クロアチア語
+      hu:
+        name: ハンガリー語
+      hy:
+        name: アルメニア語
+      id:
+        name: インドネシア語
+      it:
+        name: イタリア語
+      ja:
+        name: 日本語
+      ko:
+        name: 韓国語
+      lt:
+        name: リトアニア語
+      lv:
+        name: ラトビア語
+      nb_NO:
+        name: ノルウェー語 (ブークモール)
+      nl:
+        name: オランダ語
+      pl_PL:
+        name: ポーランド語
+      pt:
+        name: ポルトガル語
+      pt_BR:
+        name: ポルトガル語
+      ro:
+        name: ルーマニア語
+      ru:
+        name: ロシア語
+      sk:
+        name: スロバキア語
+      sl:
+        name: スロベニア語
+      sq:
+        name: アルバニア語
+      sr:
+        name: セルビア語
+      sv:
+        name: スウェーデン語
+      sw:
+        name: スワヒリ語
+      te:
+        name: テルグ語
+      th:
+        name: タイ語
+      tr_TR:
+        name: トルコ語
+      ug:
+        name: ウイグル語
+      uk:
+        name: ウクライナ語
+      ur:
+        name: ウルドゥー語
+      vi:
+        name: ベトナム語
+      zh_TW:
+        name: 中国語
+      zh_CN:
+        name: 中国語 (簡体字)
     share:
       topic_html: 'トピック: <span class="topic-title">%{topicTitle}</span>'
       post: "%{username} の投稿 #%{postNumber}"
@@ -168,16 +267,24 @@ ja:
     back_button: "戻る"
     welcome_banner:
       header:
+        logged_in_members: "%{preferred_display_name}、おかえりなさい！"
         anonymous_members: "%{site_name} へようこそ！"
       search: "検索"
     themes:
       default_description: "デフォルト"
+      broken_theme_alert: "テーマ/コンポーネントにエラーがあるため、サイトが動作しない可能性があります。詳細はブラウザコンソールを確認してください。"
       error_caused_by: "原因は '%{name}' です。<a target='blank' href='%{path}'>ここをクリック</a>して、更新、再構成、または無効にしてください。"
       only_admins: "(このメッセージはサイト管理者にのみ表示されます)"
     broken_decorator_alert: "サイトのいずれかの投稿コンテンツデコレータでエラーが発生したため、投稿が正しく表示されない可能性があります。"
     broken_page_change_alert: "onPageChange ハンドラーでエラーが発生しました。詳細は、ブラウザの開発者ツールを確認してください。"
     broken_plugin_alert: "プラグイン '%{name}' が原因"
     broken_transformer_alert: "エラーが発生しました。サイトが正しく動作しない可能性があります。"
+    critical_deprecation:
+      notice: "<b>[管理者からのお知らせ]</b> %{source} には更新が必要なコードが含まれています。（id:%{id}）"
+      learn_more_link: "(<a href='%{url}' target='_blank'><em>詳細</em></a>)"
+      theme_source: "テーマ <a target='_blank' href='%{path}'>'%{name}'</a>"
+      plugin_source: "プラグイン '%{name}'"
+      unknown_source: "テーマまたはプラグインの 1 つ"
     s3:
       regions:
         ap_northeast_1: "アジア・太平洋 (東京)"
@@ -342,6 +449,7 @@ ja:
       bookmarked_success: "ブックマークしました！"
       deleted_bookmark_success: "ブックマークが削除されました！"
       reminder_set_success: "リマインダーを設定しました！"
+      reminder_clear_success: "リマインダーをクリアしました"
       created: "この投稿をブックマークしました。%{name}"
       created_generic: "これをブックマークしました。%{name}"
       create: "ブックマークを作成"
@@ -405,9 +513,11 @@ ja:
       remove_confirmation: "この下書きを削除してもよろしいですか？"
       new_topic: "新しいトピックの下書き"
       new_private_message: "新しい個人メッセージの下書き"
+      edit_topic: "トピックの下書きを編集"
       dropdown:
         title: "最新の下書きメニューを開く"
         untitled: "無題の下書き"
+        view_all: "すべての下書きを表示"
         other_drafts:
           other: "他 %{count} 件の下書き"
     topic_count_all:
@@ -465,6 +575,16 @@ ja:
       date_filter: "投稿期間"
       in_reply_to: "返信"
       filtered_flagged_by: "通報者"
+      unknown:
+        title:
+          other: "無効化されたプラグインに保留中のレビュー待ち項目があります:"
+        instruction: "関連するプラグインが有効化されるまで、正しく表示されません。プラグインを有効化してページを更新してください。または、無視することもできます。<a href='%{url}' target='_blank'>詳細...</a>"
+        reviewable_unknown_source: "%{reviewableType} (不明なプラグイン)"
+        reviewable_known_source: "%{reviewableType} (「%{pluginName}」プラグイン)"
+        ignore_all: "すべて無視"
+        enable_plugins: "プラグインを有効化"
+        delete_confirm: "無効化されたプラグインで作成されたすべてのレビューを削除してもよろしいですか？"
+        ignore_success: "無効化されたプラグインで作成されたすべてのレビューは削除されました。"
       explain:
         why: "この項目が、キューに追加された理由を説明してください"
         title: "レビュー待ち項目スコア"
@@ -499,6 +619,7 @@ ja:
         required: "レビューする前に項目を自分に割り当てる必要があります。"
         claimed_by_you: "この項目を自分に割り当てたため、レビューできます。"
         claimed_by_other: "この項目は <b>%{username}</b> のみがレビューできます。"
+        automatically_claimed_by: "この項目は現在、<b>%{username}</b> がレビューしています。"
       claim:
         title: "トピックを自分に割り当てる"
       unclaim:
@@ -534,9 +655,17 @@ ja:
         name: "名前"
         fields: "フィールド"
         reject_reason: "理由"
+        scrubbed_by: "レコードのスクラブ実行者:"
         scrubbed_reason: "理由"
+        scrubbed_at: "削除日時:"
+        scrubbed_reject_reason: "ユーザーが拒否した理由"
         scrub_record:
+          button: レコードを削除
+          confirm_title: 個人データの削除
+          confirm_body: "このレビューキューのレコードを削除してもよろしいですか？すべての個人情報 (ユーザー名、メールアドレス、IP アドレス) はこのレコードから永久に削除されます。"
+          reason_title: "このレコードをスクラブする理由が必要です。"
           reason_placeholder: "理由..."
+          confirm_button: "削除を確定"
           cancel_button: "キャンセル"
       user_percentage:
         summary:
@@ -644,7 +773,29 @@ ja:
         reviewable_post:
           title: "投稿"
           noun: "投稿"
+      flagged_as: "通報:"
+      assigned_to: "割り当て先"
+      moderator_actions: "モデレーターのアクション"
+      timeline_and_notes: "タイムラインとメモ"
+      timeline:
+        target_created: "投稿を作成"
+        target_created_by: "%{username} が投稿を作成 · %{relativeDate}"
+        flagged: "通報"
+        flagged_as_by: "%{username} が%{flagReason}として通報 · %{relativeDate}"
+        claimed: "引き受け"
+        claimed_by: "%{username} が引き受け · %{relativeDate}"
+        reviewed: "レビュー"
+        reviewed_by: "%{username} がレビュー · %{relativeDate}"
+        view_conversation: "PM を見る"
+        note_added: "モデレーターのメモ"
+        note_added_by: "%{username} のモデレーターメモ · %{relativeDate}"
+        no_events: "表示するタイムラインイベントはありません"
       notes:
+        add_note_description: "モデレーターのみに表示されます。このメモを使用して、レビューの背景情報や決定事項を追加してください。"
+        add_note_button: "メモを追加"
+        placeholder: "ここにメモを入力してください..."
+        chars_remaining: "残り %{count} 文字"
+        delete_note: "このメモを削除する"
         delete: "削除"
       review_user: "ユーザー"
       copy_link: "リンクをコピー"
@@ -1201,17 +1352,15 @@ ja:
       color_scheme: "色パレット"
       color_schemes:
         default_description: "デフォルトのテーマ"
-        disable_dark_scheme: "通常と同じ"
         dark_instructions: "デバイスをダークモードに切り替えると、ダークモードの色パレットをプレビューできます。"
         undo: "リセット"
-        regular: "通常"
         dark: "ダークモード"
-        default_dark_scheme: "(サイトのデフォルト)"
         interface_modes:
           light: "ライト"
           dark: "ダーク"
+        picker:
+          active: "アクティブ"
       dark_mode: "ダークモード"
-      dark_mode_enable: "ダークモードの色パレットを自動的に有効にする"
       text_size_default_on_all_devices: "これをすべてのデバイスのデフォルトのテキストサイズにする"
       allow_private_messages: "ほかのユーザーが私に個人メッセージを送信することを許可する"
       external_links_in_new_tab: "すべての外部リンクを新しいタブで開く"
@@ -2242,6 +2391,8 @@ ja:
       required_at_signup: "必須"
       optional_at_signup: "オプション"
       hidden_at_signup: "オプション、登録時に非表示"
+    welcome_banner_page_visibility:
+      homepage: "ホームページ"
     shortcut_modifier_key:
       shift: "Shift"
       ctrl: "Ctrl"
@@ -2254,6 +2405,7 @@ ja:
         other: "+%{count} 個のサブカテゴリ"
       topic_count:
         other: "このカテゴリの %{count} 件のトピック"
+      read_only: "読み取り専用"
     select_kit:
       delete_item: "%{name} を削除"
       filter_by: "フィルタ: %{name}"
@@ -2318,7 +2470,6 @@ ja:
       unlist: "非表示"
       add_warning: "これは運営スタッフからの警告です。"
       toggle_whisper: "ささやきを切り替える"
-      insert_table: "テーブルを挿入"
       posting_not_on_topic: "どのトピックに返信しますか？"
       saved_local_draft_tip: "ローカルに保存しました"
       similar_topics: "これに似たトピックがあります…"
@@ -2407,10 +2558,7 @@ ja:
       paste_code_text: "コードをここに入力または貼り付け"
       upload_title: "アップロード"
       upload_description: "アップロードの説明をここに入力"
-      olist_title: "番号付きリスト"
-      ulist_title: "箇条書き"
       list_item: "リスト項目"
-      toggle_direction: "方向の切り替え"
       help: "Markdown 編集のヘルプ"
       collapse: "コンポーザーパネルを最小化"
       open: "コンポーザーパネルを開く"
@@ -2890,8 +3038,6 @@ ja:
       filter_to:
         other: "トピックの %{count} 件の投稿"
       create: "新規トピック"
-      create_disabled_category: "このカテゴリにトピックを作成することはできません"
-      create_disabled_tag: "このタグでトピックを作成することはできません"
       create_long: "新しいトピックの作成"
       open_draft: "下書きを開く"
       private_message: "メッセージを書く"
@@ -3574,8 +3720,8 @@ ja:
         name: "名前"
         description: "説明"
         remove: "削除"
-      tags_allowed_tags: "これらのタグをこのカテゴリに制限する:"
-      tags_allowed_tag_groups: "これらのタググループをこのカテゴリに制限する:"
+      tags_allowed_tags_new_category: "これらのタグをこのカテゴリに制限する:"
+      tags_allowed_tag_groups_new_category: "これらのタググループをこのカテゴリに制限する:"
       tags_placeholder: "(オプション) 許可されたタグのリスト"
       tags_tab_description: "上記に指定されたタグとタググループはこのカテゴリと、それらを同様に指定したほかのカテゴリでのみ利用できるようになります。指定されていないカテゴリでは利用できません。"
       tag_groups_placeholder: "(オプション) 許可されたタググループのリスト"
@@ -5759,8 +5905,6 @@ ja:
           filters:
             all: "すべて"
             user_selectable: "ユーザー選択可能"
-          active_badge:
-            text: "アクティブ"
           long_title: "色パレット"
           about: "テーマで使用する色を変更します。まず新しい色パレットを作成します。"
           new_name: "新しい色パレット"

@@ -95,9 +95,6 @@ ar:
               label: "النموذج"
         llm_triage:
           fields:
-            system_prompt:
-              label: "رسالة مطالبة النظام"
-              description: "رسالة المطالبة التي سيتم استخدامها للفرز، تأكَّد من رده بكلمة واحدة يمكنك استخدامها لبدء الإجراء"
             max_post_tokens:
               label: "الحد الأقصى لعدد رموز المنشور"
               description: "الحد الأقصى لعدد الرموز التي سيتم فحصها باستخدام نظام فرز نموذج اللغة الكبير (LLM)"
@@ -131,11 +128,6 @@ ar:
             include_personal_messages:
               label: "تضمين الرسائل الشخصية"
               description: "افحص الرسائل الشخصية وافرزها أيضًا"
-            model:
-              label: "النموذج"
-              description: "نموذج اللغة المُستخدَم في الفرز"
-            temperature:
-              label: "درجة الحرارة"
     discourse_ai:
       title: "الذكاء الاصطناعي"
       features:
@@ -424,7 +416,7 @@ ar:
           other: "هذا النموذج مُستخدَم حاليًا من قِبل %{settings}. إذا تم تكوينه بشكلٍ خاطئ، فلن تعمل الميزات كما هو متوقَّع. "
         model_description:
           none: "الإعدادات العامة التي تعمل مع معظم نماذج اللغة"
-          anthropic-claude-opus-4-0: "النموذج الأكثر ذكاءً لدى Anthropic"
+          anthropic-claude-opus-4-1: "النموذج الأكثر ذكاءً لدى Anthropic"
           anthropic-claude-3-5-haiku-latest: "سريع وفعَّال من حيث التكلفة"
           google-gemini-2-5-flash: "خفيف وسريع وفعَّال من حيث التكلفة مع الاستدلال متعدد النماذج"
           samba_nova-Meta-Llama-3-1-8B-Instruct: "نموذج متعدد اللغات خفيف وفعَّال"
@@ -652,13 +644,29 @@ ar:
           mixtral-8x7B-Instruct-V0:
             "1": "Mixtral-8x7B V0.1"
         conversations:
+          placeholder: "اطرح سؤالًا..."
+          new: "سؤال جديد"
+          min_input_length_message:
+            zero: "يجب أن يبلغ طول الرسالة %{count} من الأحرف أو أكثر"
+            one: "يجب أن يبلغ طول الرسالة حرفًا %{count} أو أكثر"
+            two: "يجب أن يبلغ طول الرسالة حرفين %{count} أو أكثر"
+            few: "يجب أن يبلغ طول الرسالة %{count} أحرف أو أكثر"
+            many: "يجب أن يبلغ طول الرسالة %{count} حرفًا أو أكثر"
+            other: "يجب أن يبلغ طول الرسالة %{count} حرف أو أكثر"
+          messages_sidebar_title: "المحادثات"
           today: "اليوم"
           last_7_days: "آخر 7 أيام"
           last_30_days: "آخر 30 يومًا"
+          upload_files: "تحميل الملفات"
+          uploads_in_progress: "يتعذر الإرسال بينما عمليات التحميل قيد التنفيذ"
       sentiments:
         dashboard:
           title: "المشاعر"
+        sidebar:
+          overview: "نظرة عامة على المشاعر"
+          analysis: "تحليل المشاعر"
         sentiment_analysis:
+          share_chart: "نسخ الرابط إلى الرسم البياني"
           filter_types:
             all: "الكل"
             positive: "إيجابية"
@@ -691,11 +699,22 @@ ar:
             expanded: "موسَّع"
             expanded_description: "مع ملخصات الذكاء الاصطناعي"
       discobot_discoveries:
+        main_title: "استكشافات Discobot"
         regular_results: "الموضوعات"
+        tell_me_more: "أخبرني المزيد..."
+        continue_convo: "متابعة المحادثة..."
+        loading_convo: "تحميل المحادثة"
         collapse: "طي"
+        timed_out: "يتعذر على Discobot العثور على أي استكشافات. هناك خطأ ما."
+        user_setting: "تمكين البحث عن الاستكشافات"
         tooltip:
+          header: "البحث المدعوم بالذكاء الاصطناعي"
+          content: "البحث باللغة الطبيعية مدعوم بواسطة %{model}"
           actions:
+            info: "كيف يعمل؟"
             disable: "إيقاف"
+      user_preferences:
+        empty: "ليست هناك أي إعدادات متاحة ذات صلة في الوقت الحالي"
     review:
       types:
         reviewable_ai_post:

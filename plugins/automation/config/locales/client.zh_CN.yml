@@ -445,8 +445,6 @@ zh_CN:
             label: 版本
           status:
             label: 状态
-          enabled:
-            label: 已启用
           disabled:
             label: 已禁用
           placeholders:

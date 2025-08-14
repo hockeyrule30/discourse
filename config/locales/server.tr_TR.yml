@@ -60,6 +60,8 @@ tr_TR:
   inline_oneboxer:
     topic_page_title_post_number: "#%{post_number}"
     topic_page_title_post_number_by_user: "%{username} tarafından #%{post_number}"
+    too_many_urls: "Tek bir istekte 10’dan fazla URL’yi satır içinde tek kutu olarak ekleyemezsiniz"
+    concurrency_not_allowed: "Eş zamanlı satır içi tek kutulama isteklerine izin verilmez. Lütfen her seferinde bir istek gönderin."
   components:
     enabled_filter: "Etkin"
     disabled_filter: "Devre Dışı"
@@ -72,6 +74,7 @@ tr_TR:
     bad_color_scheme: "Tema güncellenemiyor, geçersiz renk paleti"
     other_error: "Temanın güncellenmesi sırasında bir sorun oluştu"
     ember_selector_error: "Maalesef #ember veya .ember-view CSS seçicilerinin kullanılmasına izin verilmiyor çünkü bu adlar çalışma zamanında dinamik olarak oluşturulur ve zamanla değişerek sonunda CSS'nin bozulmasına neden olur. Farklı bir seçici deneyin."
+    setting_not_themeable: "\"%{name}\" ayarı tema yapılamıyor."
     import_error:
       generic: Bu tema içe aktarılırken bir hata oluştu
       upload: "Yükleme varlığı oluşturulurken hata oluştu: %{name}. %{errors}"
@@ -256,6 +259,7 @@ tr_TR:
     format: ! "%{attribute} %{message}"
     format_with_full_message: "<b>%{attribute}</b>: %{message}"
     messages:
+      invalid_locale: "%{invalid_locale} geçerli bir yerel ayar değil"
       too_long_validation:
         one: "%{count} karakterle sınırlı; siz %{length} karakter girdiniz."
         other: "%{count} karakterle sınırlı; siz %{length} karakter girdiniz."
@@ -1578,7 +1582,6 @@ tr_TR:
     default_locale: "Bu Discourse örneğinin varsayılan dili. Sistem tarafından oluşturulan kategorilerin ve konuların metnini <a href='%{base_path}/admin/customize/site_texts' target='_blank'>Özelleştir / Metin'den</a> değiştirebilirsiniz."
     allow_user_locale: "Kullanıcıların kendi dil arayüzü tercihlerini seçmelerine izin verin"
     set_locale_from_cookie: "\"Yerel ayar\" tarayıcı çerezi aracılığıyla anonim bir kullanıcının yerel ayarının ayarlanmasına izin verir"
-    set_locale_from_param: "Anonim bir kullanıcının yerel ayarını \"lang\" URL parametresi aracılığıyla ayarlamaya izin verir, ör. ?lang=es"
     support_mixed_text_direction: "Soldan sağa ve sağdan sola karışık metin yönlerini destekler"
     min_post_length: "Karakter cinsinden izin verilen minimum gönderi uzunluğu (kişisel mesajlar hariç)"
     min_first_post_length: "İzin verilen minimum ilk gönderi (konu gövdesi) uzunluğu (kişisel mesajlar hariç)"
@@ -1855,8 +1858,6 @@ tr_TR:
     allow_restore: "TÜM site verilerini değiştirebilen geri yüklemeye izin verin! Bir yedeği geri yüklemeyi planlamıyorsanız devre dışı bırakın"
     maximum_backups: "Tutulacak maksimum yedekleme miktarı. Eski yedeklemeler otomatik olarak silinir"
     remove_older_backups: "Belirtilen gün sayısından daha eski yedekleri kaldırın. Devre dışı bırakmak için boş bırakın."
-    automatic_backups_enabled: "Yedekleme sıklığında tanımlandığı şekilde otomatik yedeklemeleri çalıştırın"
-    backup_frequency: "Sitenin otomatik yedeklerinin oluşturulacağı aralığı gün cinsinden belirtir. Örneğin 7 olarak ayarlanırsa her hafta yeni bir yedek oluşturulur. Bu ayarın etkinleştirilmesi `automatic_backups_enabled` seçeneğine bağlıdır."
     s3_backup_bucket: "Yedeklerin tutulacağı uzak kova. UYARI: Özel bir kova olduğundan emin olun."
     s3_endpoint: "Uç nokta, DigitalOcean Spaces veya Minio gibi S3 uyumlu bir hizmete yedekleme yapacak şekilde değiştirilebilir. UYARI: AWS S3 kullanıyorsanız boş bırakın."
     s3_configure_tombstone_policy: "Silinmiş öge yüklemeleri için otomatik silme ilkesini etkinleştirin. ÖNEMLİ: Devre dışı bırakılırsa yüklemeler silindikten sonra hiçbir alan geri alınmaz."
@@ -2016,7 +2017,6 @@ tr_TR:
     desktop_category_page_style: "Bu ayar, masaüstündeki /categories sayfasının görsel düzenini belirler. Öne çıkan konularla birlikte alt kategorilerin görüntülenmesi, en son konuların gösterilmesi veya en iyi konuların sunulması gibi seçenekleri içerir. Seçilen stil, kullanıcıların sitedeki kategorilerle nasıl etkileşime gireceğini ve kategorilerde nasıl gezineceğini etkiler."
     mobile_category_page_style: "Bu ayar, /categories sayfasının mobil cihazlardaki görsel düzenini belirler."
     category_colors: "Kategoriler için izin verilen onaltılık renk değerlerinin bir listesi."
-    default_dark_mode_color_scheme_id: "Koyu moddayken kullanılan renk paleti."
     dark_mode_none: "Hiçbiri"
     max_image_size_kb: "Maksimum görüntü yükleme boyutu. Bu, nginx (client_max_body_size) / apache veya proxy'de de yapılandırılmalıdır. Bundan daha büyük ve client_max_body_size değerinden daha küçük görüntüler yükleme sırasında sığacak şekilde yeniden boyutlandırılır."
     max_attachment_size_kb: "Maksimum ek dosya yükleme boyutu. Bu, nginx (client_max_body_size) / apache veya proxy'de de yapılandırılmalıdır."
@@ -4995,11 +4995,9 @@ tr_TR:
       agree_and_edit:
         title: "Kabul Et ve Gönderiyi Düzenle"
         description: "Bayrağı kabul edin ve gönderiyi düzenlemek için bir besteci penceresi açın."
-      delete_single:
+      delete:
         title: "Sil"
         complete: "Gönderi silindi."
-      delete:
-        title: "Sil…"
       delete_and_ignore:
         title: "Bayrağı yok say ve gönderiyi sil"
         description: "Kuyruktan kaldırarak bayrağı yok sayın ve gönderiyi silin; ilk gönderiyse konuyu da silin. "
@@ -5038,7 +5036,10 @@ tr_TR:
         complete: "Gönderi onaylandı."
       approve_post:
         title: "Gönderiyi Onayla"
-        confirm_closed: "Bu konu kapalı. Yine de gönderiyi oluşturmak istiyor musunuz?"
+        complete: "Gönderi onaylandı."
+      approve_post_closed:
+        title: "Gönderiyi Onayla"
+        confirm: "Bu konu kapalı. Yine de gönderiyi oluşturmak istiyor musunuz?"
         complete: "Gönderi onaylandı."
       reject_post:
         title: "Gönderiyi Reddet"

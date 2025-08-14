@@ -138,6 +138,11 @@ fa_IR:
       placeholder: تاریخ
       from_placeholder: "از تاریخ"
       to_placeholder: "تا تاریخ"
+    languages:
+      ar:
+        name: عربی
+      fa_IR:
+        name: فارسی
     share:
       topic_html: 'موضوع: <span class="topic-title">%{topicTitle}</span>'
       post: "نوشته #%{postNumber} توسط @%{username}"
@@ -1290,18 +1295,16 @@ fa_IR:
       color_scheme: "پالت رنگ"
       color_schemes:
         default_description: "تم پیش‌فرض"
-        disable_dark_scheme: "مثل معمولی"
         dark_instructions: "می‌توانید با تغییر پوسته دستگاهتان به حالت تاریک، پالت رنگ حالت تاریک را پیش‌نمایش کنید."
         undo: "بازنشانی"
-        regular: "عادی"
         dark: "حالت تاریک"
-        default_dark_scheme: "(پیش‌فرض سایت)"
         interface_modes:
           auto: "خودکار"
           light: "روشن"
           dark: "تیره"
+        picker:
+          active: "فعال"
       dark_mode: "حالت تاریک"
-      dark_mode_enable: "پالت رنگ حالت تاریک خودکار را فعال کنید"
       text_size_default_on_all_devices: "این سایز قلم حالت پیش فرض در تمام دستگاه های من باشد"
       allow_private_messages: "به دیگر کاربران اجازه بده به من پیام شخصی بفرستند"
       external_links_in_new_tab: "همهٔ پیوندهای خروجی را در یک تب جدید باز کن"
@@ -2389,6 +2392,8 @@ fa_IR:
       disabled: "نمایش داده نشود"
       sidebar_footer: "نمایش در پاورقی نوار کناری"
       header: "نمایش در سر صفحه"
+    welcome_banner_page_visibility:
+      homepage: "صفحه اصلی"
     shortcut_modifier_key:
       shift: "Shift"
       ctrl: "Ctrl"
@@ -2403,6 +2408,7 @@ fa_IR:
       topic_count:
         one: "%{count} موضوع در این دسته"
         other: "%{count} موضوع در این دسته"
+      read_only: "فقط خواندنی"
     select_kit:
       delete_item: "حذف %{name}"
       filter_by: "فیلتر توسط: %{name}"
@@ -2469,8 +2475,7 @@ fa_IR:
       whisper: "زمزمه"
       unlist: "از فهرست پاک شده"
       add_warning: "این یک هشدار رسمی است."
-      toggle_whisper: "تغییر وضعیت زمزمه"
-      insert_table: "درج جدول"
+      toggle_whisper: "فعالسازی زمزمه"
       posting_not_on_topic: "به کدام موضوع می‌خواهید پاسخ دهید؟"
       saved_local_draft_tip: "به صورت محلی ذخیره شد"
       similar_topics: "موضوعات مشابه…"
@@ -2567,10 +2572,7 @@ fa_IR:
       paste_code_text: "کد را در اینجا بنویسید یا بچسبانید"
       upload_title: "بارگذاری"
       upload_description: "توضیح بارگذاری را در اینجا بنویسید"
-      olist_title: "فهرست شماره گذاری شده"
-      ulist_title: "فهرست نقطه‌ای"
       list_item: "فهرست موارد"
-      toggle_direction: "تغییر جهت"
       help: "راهنمای ویرایش با Markdown"
       collapse: "کوچک سازی پنل نوشتن"
       open: "پنل کامپوزر را باز کنید"
@@ -3084,8 +3086,6 @@ fa_IR:
         one: "%{count} نوشته در این موضوع وجود دارد"
         other: "%{count} نوشته در این موضوع وجود دارد"
       create: "موضوع جدید"
-      create_disabled_category: "شما مجاز به ایجاد موضوع در این دسته‌بندی نیستید"
-      create_disabled_tag: "شما مجاز به ایجاد موضوع با این برچسب نیستید"
       create_long: "ساخت یک موضوع جدید"
       open_draft: "بازکردن پیشنویس"
       private_message: "شروع یک پیام"
@@ -3817,8 +3817,8 @@ fa_IR:
         add: "افزودن زبان جدید"
         remove: "پاک کردن"
         hint: "در حال حاضر هیچ محلی‌سازی برای این دسته‌بندی وجود ندارد. برای افزودن محلی‌سازی، روی «افزودن زبان جدید» در زیر کلیک کنید."
-      tags_allowed_tags: "محدودکردن این برچسب‌ها به این دسته‌بندی:"
-      tags_allowed_tag_groups: "این گروه برچسب را به این دسته محدود کنید:"
+      tags_allowed_tags_new_category: "محدودکردن این برچسب‌ها به این دسته‌بندی:"
+      tags_allowed_tag_groups_new_category: "این گروه برچسب را به این دسته محدود کنید:"
       tags_placeholder: "(اختیاری) فهرست برچسب‌های قابل استفاده"
       tags_tab_description: "برچسب‌ها و گروه‌های برچسب مشخص‌شده در بالا فقط در این دسته و سایر دسته‌هایی که آنها را نیز مشخص می‌کنید در دسترس خواهند بود. آنها برای استفاده در دسته های دیگر در دسترس نخواهند بود."
       tag_groups_placeholder: "(اختیاری) لیست برچسب‌های قابل استفاده‌ی گروه"
@@ -6064,8 +6064,6 @@ fa_IR:
           filters:
             all: "همه"
             user_selectable: "قابل انتخاب توسط کاربر"
-          active_badge:
-            text: "فعال"
           long_title: "پالت‌های رنگ"
           about: "رنگ های استفاده شده توسط پوسته‌های خود را تغییر دهید. برای شروع یک پالت رنگ جدید ایجاد کنید."
           new_name: "پالت رنگی جدید"

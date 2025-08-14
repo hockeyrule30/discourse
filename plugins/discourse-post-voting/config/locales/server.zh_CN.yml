@@ -31,6 +31,7 @@ zh_CN:
     post_voting_comment_limit_per_post: "每篇帖子允许的评论数"
     min_trust_to_flag_posts_voting_comments: "举报帖子投票评论的最低信任级别"
     flag_posts_voting_comments_allowed_groups: "能够举报帖子投票评论的群组"
+    post_voting_comment_enabled: "允许对“帖子投票”话题中的帖子发表评论"
     keywords:
       flag_posts_voting_comments_allowed_groups: "min_trust_to_flag_posts_voting_comments"
   post_action_types:
@@ -56,6 +57,7 @@ zh_CN:
         limit_exceeded: "已达到每篇帖子 %{limit} 条评论的限制。"
         perform: "帖子投票评论举报得分很高，高到足以将用户禁言。"
         auto_silence_from_flags: "由于举报而被自动禁言。"
+        disabled: "不允许对帖子发表评论。"
       reviewables:
         comment_already_handled: "谢谢，但我们已经审核这条评论，并确定不需要再次对其进行举报。"
         actions:

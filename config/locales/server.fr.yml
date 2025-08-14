@@ -333,7 +333,7 @@ fr:
       cors_origins_should_not_have_trailing_slash: "Vous ne devez pas ajouter la barre oblique finale (/) aux origines CORS."
       slow_down_crawler_user_agent_must_be_at_least_3_characters: "Les agents utilisateurs doivent comporter au moins 3 caractères pour éviter de limiter accidentellement le débit des utilisateurs légitimes."
       slow_down_crawler_user_agent_cannot_be_popular_browsers: "Vous ne pouvez ajouter aucune des valeurs suivantes au paramètre : %{values}."
-      strip_image_metadata_cannot_be_disabled_if_composer_media_optimization_image_enabled: "Vous ne pouvez pas désactiver le retrait des métadonnées de l'image si l'option « Image d'optimisation des contenus multimédias du compositeur activée » est activée. Désactivez cette option avant de désactiver les métadonnées de l'image."
+      strip_image_metadata_cannot_be_disabled_if_composer_media_optimization_image_enabled: "Vous ne pouvez pas désactiver la suppression des métadonnées d'image si l'option « Optimisation des images dans l'éditeur » est activée. Désactivez « Optimisation des images dans l'éditeur » avant de désactiver la suppression des métadonnées d'image."
       x_summary_large_image_no_svg: "Les images de résumé Twitter utilisées pour les métadonnées twitter:image ne peuvent pas être des images .svg."
       tl0_and_anonymous_flag: "Pour les utilisateurs anonymes, une « site contact email » ou une « email address to report illegal content » doit être fournie."
     conflicting_google_user_id: 'Le Google Account ID a changé pour ce compte ; un responsable doit intervenir pour des raisons de sécurité. Merci de contacter les responsables et les renvoyer vers <br><a href="https://meta.discourse.org/t/76575">https://meta.discourse.org/t/76575</a>'
@@ -1578,7 +1578,6 @@ fr:
     default_locale: "La langue par défaut de cette instance Discourse. Vous pouvez remplacer le texte des catégories et des sujets générés par le système dans <a href='%{base_path}/admin/customize/site_texts' target='_blank'>Personnaliser/texte</a> ."
     allow_user_locale: "Autoriser les utilisateurs à choisir la langue de l'interface dans leurs préférences"
     set_locale_from_cookie: "Permet de définir les paramètres régionaux d'un utilisateur anonyme via le cookie du navigateur « locale »"
-    set_locale_from_param: "Permet de définir les paramètres régionaux d'un utilisateur anonyme via le paramètre d'URL « lang », p. ex., ?lang=es"
     support_mixed_text_direction: "Permettre le mélange de textes gauche-droite et droite-gauche"
     min_post_length: "Longueur minimale autorisée des messages en caractères (à l'exception des messages privés)"
     min_first_post_length: "Longueur minimale autorisée du premier message (corps du sujet) (à l'exception des messages privés)"
@@ -1772,7 +1771,7 @@ fr:
     top_page_default_timeframe: "Période de temps par défaut de la première page pour les utilisateurs anonymes (s'ajuste automatiquement pour les utilisateurs connectés en fonction de leur dernière visite)."
     moderators_view_emails: "Autorisez les modérateurs à consulter les adresses e-mail des utilisateurs."
     prioritize_username_in_ux: "Afficher le nom d'utilisateur en premier sur la page d'un utilisateur, sa carte et ses messages (si cette option est désactivée, le nom complet est affiché en premier)"
-    enable_rich_text_paste: "Activez la conversion automatique HTML en Markdown lors du collage de texte dans le compositeur."
+    enable_rich_text_paste: "Activer la conversion automatique de HTML en Markdown lors du collage de texte dans l'éditeur."
     send_old_credential_reminder_days: "Rappeler l'utilisation de vieux identifiants après ce nombre de jours"
     email_token_valid_hours: "Les jetons (tokens) de mot de passe oublié/activation de compte sont valides (n) jours."
     enable_badges: "Activez le système de badges, qui est une forme de gamification visant à renforcer les actions positives des utilisateurs. Voir <a href='https://meta.discourse.org/t/what-are-badges/32540' _target='blank'>Que sont les badges ?</a> sur Discourse Meta pour en savoir plus."
@@ -1855,8 +1854,6 @@ fr:
     allow_restore: "Autoriser la restauration de données, ce qui peut écraser TOUTES les données du site ! Laissez ce paramètre désactivé, sauf si vous envisagez de restaurer une sauvegarde."
     maximum_backups: "Nombre maximal de sauvegardes à conserver. Les anciennes sauvegardes seront automatiquement supprimées"
     remove_older_backups: "Supprimez les sauvegardes antérieures au nombre de jours spécifié. Laissez ce champ vide pour désactiver l'option."
-    automatic_backups_enabled: "Créer automatiquement des sauvegardes suivant la fréquence définie dans le paramètre « backup frequency »"
-    backup_frequency: "Spécifie l'intervalle, en jours, auquel les sauvegardes automatiques du site sont créées. Si ce paramètre est défini sur 7, par exemple, une nouvelle sauvegarde sera générée chaque semaine. L'activation de ce paramètre dépend de automatic_backups_enabled."
     s3_backup_bucket: "Bucket distant qui contiendra les sauvegardes. ATTENTION : vérifiez que le bucket est privé."
     s3_endpoint: "La destination peut être modifiée pour envoyer les sauvegardes vers un service compatible avec S3, par exemple DigitalOcean Spaces ou Minio. ATTENTION : laisser vide si vous utilisez AWS S3."
     s3_configure_tombstone_policy: "Activer la suppression automatique des fichiers non utilisés. IMPORTANT : en cas de désactivation, aucun espace disque ne sera récupéré après la suppression des fichiers."
@@ -2016,7 +2013,6 @@ fr:
     desktop_category_page_style: "Ce paramètre détermine la disposition visuelle de la page /categories sur le bureau. Il inclut des options telles que l'affichage des sous-catégories avec les sujets en vedette, l'affichage des sujets les plus récents ou la présentation des principaux sujets. Le style choisi influencera la façon dont les utilisateurs interagiront et navigueront dans les catégories du site."
     mobile_category_page_style: "Ce paramètre détermine la disposition visuelle de la page /categories sur les appareils mobiles."
     category_colors: "Une liste de couleurs en valeur hexadécimale autorisées pour les catégories."
-    default_dark_mode_color_scheme_id: "La palette de couleurs utilisée en mode sombre."
     dark_mode_none: "Aucune"
     max_image_size_kb: "La taille maximale de téléversement d'image. Cela doit également être configuré dans nginx (client_max_body_size) / apache ou proxy. Les images plus grandes et plus petites que client_max_body_size seront redimensionnées pour s'adapter au téléversement."
     max_attachment_size_kb: "Taille maximale de téléversement de pièces jointes. Cela doit également être configuré dans nginx (client_max_body_size) / apache ou proxy."
@@ -2298,7 +2294,7 @@ fr:
     default_other_notification_level_when_replying: "Niveau de notification global par défaut quand un utilisateur répond à un sujet."
     default_other_external_links_in_new_tab: "Par défaut, ouvrir tous les liens externes dans un nouvel onglet"
     default_other_enable_quoting: "Par défaut, proposer de citer le texte sélectionné."
-    default_other_enable_smart_lists: "Activer les listes intelligentes lors de la saisie dans le compositeur par défaut."
+    default_other_enable_smart_lists: "Activer par défaut les listes intelligentes lors de la saisie dans l'éditeur."
     default_other_enable_defer: "Par défaut, activer le bouton pour reporter un sujet à plus tard."
     default_other_dynamic_favicon: "Par défaut, faire apparaître le nombre de sujets récemment créés ou mis à jour sur l'icône du navigateur."
     default_other_skip_new_user_tips: "Ignorer les conseils et badges d'intégration des nouveaux utilisateurs."
@@ -2383,7 +2379,7 @@ fr:
     gravatar_login_url: "URL relative à gravatar_base_url, qui fournit à l'utilisateur la connexion au service Gravatar."
     share_quote_buttons: "Choisissez les éléments qui apparaissent dans le bouton de partage de citation, ainsi que leur ordre."
     share_quote_visibility: "Choisissez quand afficher le bouton de partage de citation : jamais, uniquement aux utilisateurs anonymes ou à tous les utilisateurs. "
-    create_revision_on_bulk_topic_moves: "Créer une révision pour les premiers messages lorsque les sujets sont déplacés en masse dans une nouvelle catégorie."
+    create_revision_on_bulk_topic_moves: "Créer une révision des premiers messages lorsque des sujets sont déplacés en bloc vers une nouvelle catégorie."
     allow_changing_staged_user_tracking: "Permettre aux administrateurs de modifier les préférences de notification relatives aux catégories et aux étiquettes, pour les comptes d'utilisateurs distants."
     use_name_for_username_suggestions: "Utiliser le nom complet d'un utilisateur lorsque vous suggérez des noms d'utilisateur."
     suggest_weekends_in_date_pickers: "Inclure les week-ends dans les suggestions du sélectionneur de date (désactivez ce paramètre si vous n'utilisez Discourse que les jours de semaine)."
@@ -3144,8 +3140,8 @@ fr:
 
         %{logs}
     bulk_invite_succeeded:
-      title: "Invitation en masse réussie"
-      subject_template: "Envoi des invitations en masse réussi"
+      title: "Invitation groupée réussie"
+      subject_template: "L'invitation groupée des utilisateurs a été traitée avec succès"
       text_body_template: |
         Votre fichier d'invitations groupées d'utilisateurs a été traité, %{sent} invitations ont été envoyées, %{skipped} invitations ont été ignorées et %{warnings} invitations comprennent un avertissement.
 
@@ -3159,8 +3155,8 @@ fr:
         %{logs}
         ```
     bulk_invite_failed:
-      title: "Invitation en masse échouée"
-      subject_template: "Envoi des invitations en masse effectué avec des erreurs"
+      title: "Échec de l'invitation groupée"
+      subject_template: "L'invitation groupée des utilisateurs a été traitée avec des erreurs"
       text_body_template: |
         Votre fichier d'invitations groupées d'utilisateurs a été traité, %{sent} invitations ont été envoyées, %{skipped} invitations ont été ignorées, %{warnings} invitations comprennent un avertissement et %{failed} invitations comprennent une erreur.
 
@@ -5042,11 +5038,9 @@ fr:
       agree_and_edit:
         title: "Accepter et modifier la publication"
         description: "Acceptez le signalement et ouvrez une fenêtre de composition pour modifier le message."
-      delete_single:
+      delete:
         title: "Supprimer"
         complete: "Message supprimé."
-      delete:
-        title: "Supprimer…"
       delete_and_ignore:
         title: "Ignorer le signalement et supprimer le message"
         description: "Ignorez le signalement en le retirant de la file d'attente et supprimez le message. S'il s'agit du premier message, vous supprimerez également le sujet. "
@@ -5085,7 +5079,10 @@ fr:
         complete: "Message approuvé."
       approve_post:
         title: "Approuver le message"
-        confirm_closed: "Ce sujet est fermé. Voulez-vous quand même créer le message ?"
+        complete: "Message approuvé."
+      approve_post_closed:
+        title: "Approuver le message"
+        confirm: "Ce sujet est fermé. Voulez-vous quand même créer le message ?"
         complete: "Message approuvé."
       reject_post:
         title: "Rejeter le message"

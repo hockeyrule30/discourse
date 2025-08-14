@@ -96,6 +96,7 @@ nl:
     carbonads_exclude_groups: "Advertenties worden niet getoond aan leden van deze groepen"
     carbonads_topic_list_top_enabled: "Advertentie tonen boven de topicslijst"
     carbonads_above_post_stream_enabled: "Advertentie tonen boven de berichtstroom"
+    adbutler_publisher_id: "AdButler-uitgever-ID. OPMERKING: je moet mogelijk de instelling 'content security policy script src' bijwerken. Zie <a href='https://meta.discourse.org/t/33734' target='_blank'>dit topic</a> voor de meest recente instructies."
     adbutler_mobile_topic_list_top_zone_id: "Zone-ID voor locatie boven topicslijst in mobiele weergave"
     adbutler_mobile_topic_above_post_stream_zone_id: "Zone-ID voor locatie boven berichtstroom in mobiele weergave"
     adbutler_mobile_post_bottom_zone_id: "Zone-ID voor locatie onder topic in mobiele weergave"

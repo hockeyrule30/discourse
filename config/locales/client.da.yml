@@ -1215,15 +1215,14 @@ da:
       color_scheme: "Farvepalet"
       color_schemes:
         default_description: "Tema standard"
-        disable_dark_scheme: "Samme som almindelig"
         undo: "Nulstil"
-        regular: "Almindelig"
         dark: "Mørk tilstand"
-        default_dark_scheme: "(standard for websted)"
         interface_modes:
           auto: "Auto"
           light: "Lys"
           dark: "Mørk"
+        picker:
+          active: "Aktiv"
       dark_mode: "Mørk Tilstand"
       text_size_default_on_all_devices: "Gør dette til standard tekststørrelse på alle mine enheder"
       allow_private_messages: "Tillad andre brugere at sende mig personlige beskeder"
@@ -2085,6 +2084,8 @@ da:
       optional_at_signup: "Valgfri"
     interface_color_selector:
       disabled: "Vis ikke"
+    welcome_banner_page_visibility:
+      homepage: "Hjemmeside"
     shortcut_modifier_key:
       shift: "Shift"
       ctrl: "Ctrl"
@@ -2099,6 +2100,7 @@ da:
       topic_count:
         one: "%{count} emne i denne kategori"
         other: "%{count} emner i denne kategori"
+      read_only: "læs kun"
     select_kit:
       delete_item: "Slet %{name}"
       filter_by: "Filtrer efter: %{name}"
@@ -2162,7 +2164,6 @@ da:
       unlist: "Ikke listede"
       add_warning: "Dette er en officiel advarsel."
       toggle_whisper: "Slå hvisken til/fra"
-      insert_table: "Indsæt tabel"
       posting_not_on_topic: "Hvilket emne vil du svare på?"
       saved_local_draft_tip: "gemt lokalt"
       similar_topics: "Dit emne minder om…"
@@ -2240,10 +2241,7 @@ da:
       paste_code_text: "skriv eller indsæt kode her"
       upload_title: "Overfør"
       upload_description: "skriv overførsels beskrivelse her"
-      olist_title: "Nummereret liste"
-      ulist_title: "Punktopstilling"
       list_item: "Listepunkt"
-      toggle_direction: "Vis/skjul retning "
       help: "Hjælp til Markdown-redigering"
       collapse: "minimer forfatter panelet"
       open: "åbn forfatter panelet"
@@ -2642,7 +2640,6 @@ da:
         one: "%{count} indlæg i emnet"
         other: "%{count} indlæg i emnet"
       create: "Nyt emne"
-      create_disabled_category: "Du har ikke tilladelse til at oprette emner i denne kategori"
       create_long: "Opret et nyt emne i debatten"
       open_draft: "Åbn kladde"
       private_message: "Start en besked"
@@ -3279,8 +3276,8 @@ da:
         name: "Navn"
         description: "Beskrivelse"
         remove: "Fjern"
-      tags_allowed_tags: "Begræns disse mærker til denne kategori:"
-      tags_allowed_tag_groups: "Begræns disse mærkegrupper til denne kategori:"
+      tags_allowed_tags_new_category: "Begræns disse mærker til denne kategori:"
+      tags_allowed_tag_groups_new_category: "Begræns disse mærkegrupper til denne kategori:"
       tags_placeholder: "(Valgfri) liste af tiladte mærker"
       tags_tab_description: "Mærker og mærkegrupper, der er angivet ovenfor, vil kun være tilgængelige i denne kategori og andre kategorier, der også angiver dem. De vil ikke være tilgængelige for brug i andre kategorier."
       tag_groups_placeholder: "(Valgfri) liste af tiladte mærkegrupper"
@@ -5068,8 +5065,6 @@ da:
           filters:
             all: "Alle"
             user_selectable: "Kan vælges af brugeren"
-          active_badge:
-            text: "Aktiv"
           long_title: "Farvepaletter"
           about: "Rediger de farver, der bruges af dine temaer. Opret en ny farvepalet for at starte."
           new_name: "Ny farvepalet"

@@ -59,6 +59,7 @@ ar:
     deleted_chat_username: تم الحذف
     errors:
       users_cant_be_added_to_channel: "لا يمكن إضافة المستخدمين إلى هذه القناة."
+      user_cant_be_removed_from_channel: "لا يمكن إزالة المستخدم من هذه القناة"
       channel_exists_for_category: "توجد قناة بالفعل في هذه الفئة وبهذا الاسم"
       channel_new_message_disallowed:
         archived: "القناة مؤرشفة، ولا يمكن إرسال رسائل جديدة"
@@ -98,6 +99,7 @@ ar:
       actor_muting_target_user: "أنت تكتم %{username}؛ لذا لا يمكنك إرسال رسائل إليه."
       actor_disallowed_dms: "لقد اخترت منع المستخدمين من إرسال رسائل شخصية ومباشرة إليك؛ لذا لا يمكنك إنشاء رسائل مباشرةً جديدة."
       actor_preventing_target_user_from_dm: "لقد اخترت منع %{username} من إرسال رسائل شخصية ومباشرة إليك؛ لذا لا يمكنك إنشاء رسائل مباشرةً جديدة إليه."
+      not_reachable: "عذرًا، %{username} لا يستخدم الدردشة."
       user_cannot_send_direct_messages: "عذرًا، لا يمكنك إرسال الرسائل المباشرة."
       over_chat_max_direct_message_users_allow_self: "يمكنك إرسال رسالة مباشرة إلى نفسك فقط."
       over_chat_max_direct_message_users:

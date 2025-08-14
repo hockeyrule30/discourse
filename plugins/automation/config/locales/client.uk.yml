@@ -448,8 +448,6 @@ uk:
             label: Версія
           status:
             label: Статус
-          enabled:
-            label: Включено
           disabled:
             label: Вимкнено
           placeholders:

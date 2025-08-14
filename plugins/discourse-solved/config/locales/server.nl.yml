@@ -35,6 +35,10 @@ nl:
     no_solutions:
       self: "Je hebt nog geen geaccepteerde oplossingen."
       others: "Geen geaccepteerde oplossingen."
+    filter:
+      description:
+        solved: "Filter topics die zijn opgelost"
+        unsolved: "Filter topics die niet zijn opgelost"
   badges:
     solved_1:
       name: "Opgelost!"

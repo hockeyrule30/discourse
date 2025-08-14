@@ -448,8 +448,6 @@ he:
             label: גרסה
           status:
             label: מצב
-          enabled:
-            label: פעיל
           disabled:
             label: כבוי
           placeholders:

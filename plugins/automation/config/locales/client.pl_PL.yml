@@ -448,8 +448,6 @@ pl_PL:
             label: Wersja
           status:
             label: Status
-          enabled:
-            label: Włączona
           disabled:
             label: Wyłączone
           placeholders:

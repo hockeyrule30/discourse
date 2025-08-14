@@ -420,8 +420,6 @@ ar:
             label: الإصدار
           status:
             label: الحالة
-          enabled:
-            label: مفعَّلة
           disabled:
             label: متوقفة
           placeholders:

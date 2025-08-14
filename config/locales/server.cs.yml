@@ -3938,11 +3938,9 @@ cs:
         description: "Schválit nahlášení a ztišit uživatele."
       agree_and_restore:
         description: "Obnov příspěvek, aby ho mohli vidět všichni ostatní uživatelé."
-      delete_single:
+      delete:
         title: "Smazat"
         complete: "Příspěvek smazán."
-      delete:
-        title: "Odstranit…"
       delete_and_ignore:
         title: "Ignorovat nahlášení a smazat příspěvek"
         description: "Ignorovat nahlášení tím, že jej odstraněníte z fronty a smažete příspěvek; pokud jde o první příspěvek, smaže i téma. "
@@ -3981,7 +3979,10 @@ cs:
         complete: "Příspěvek schválen."
       approve_post:
         title: "Schválit příspěvek"
-        confirm_closed: "Toto téma je uzavřeno. Chcete příspěvek přesto vytvořit?"
+        complete: "Příspěvek schválen."
+      approve_post_closed:
+        title: "Schválit příspěvek"
+        confirm: "Toto téma je uzavřeno. Chcete příspěvek přesto vytvořit?"
         complete: "Příspěvek schválen."
       reject_post:
         title: "Odmítnout příspěvek"

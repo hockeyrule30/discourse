@@ -416,8 +416,6 @@ fr:
             label: Version
           status:
             label: Statut
-          enabled:
-            label: Activé
           disabled:
             label: Désactivé
           placeholders:

@@ -416,8 +416,6 @@ tr_TR:
             label: Sürüm
           status:
             label: Durum
-          enabled:
-            label: Etkin
           disabled:
             label: Devre Dışı
           placeholders:

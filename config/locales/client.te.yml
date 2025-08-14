@@ -1176,14 +1176,13 @@ te:
       color_scheme: "రంగుల పాలెట్"
       color_schemes:
         default_description: "థీమ్ డిఫాల్ట్"
-        disable_dark_scheme: "రెగ్యులర్ మాదిరిగానే"
         undo: "రీసెట్ చేయండి"
-        regular: "రెగ్యులరు"
         dark: "డార్క్ మోడ్"
-        default_dark_scheme: "(సైట్ డిఫాల్ట్)"
         interface_modes:
           light: "లేత"
           dark: "డార్క్"
+        picker:
+          active: "క్రియాశీల"
       dark_mode: "డార్క్ మోడ్"
       text_size_default_on_all_devices: "నా అన్ని పరికరాలలో దీన్ని డిఫాల్ట్ వచన పరిమాణంగా చేయండి"
       allow_private_messages: "నాకు వ్యక్తిగత సందేశాలను పంపడానికి ఇతర సభ్యులను అనుమతించండి"
@@ -2109,6 +2108,7 @@ te:
       topic_count:
         one: "ఈ వర్గంలో %{count} విషయం"
         other: "ఈ వర్గంలోని %{count} విషయాలు"
+      read_only: "చదవడానికి మాత్రమే"
     select_kit:
       delete_item: "%{name} ని తొలగించండి"
       filter_by: "దీని ద్వారా ఫిల్టర్ చేయండి: %{name}"
@@ -2175,7 +2175,6 @@ te:
       unlist: "జాబితా నుంచి తొలగించిన"
       add_warning: "ఇది ఒక అధికారిక హెచ్చరిక"
       toggle_whisper: "గుసగుసలను టోగుల్ చేయండి"
-      insert_table: "పట్టికను చొప్పించండి"
       posting_not_on_topic: "ఏ విషయానికి మీరు ప్రత్యుత్తరం ఇవ్వాలనుకుంటున్నారు?"
       saved_local_draft_tip: "స్థానికంగా సేవ్ చేయబడింది"
       similar_topics: "మీ విషయం దీనితో పోలి ఉంది…"
@@ -2268,10 +2267,7 @@ te:
       paste_code_text: "ఇక్కడ కోడ్‌ని టైప్ చేయండి లేదా అతికించండి"
       upload_title: "ఎగుమతించు"
       upload_description: "ఎగుమతి వివరణ ఇక్కడ రాయండి"
-      olist_title: "సంఖ్యా జాబితా"
-      ulist_title: "చుక్కల జాబితా"
       list_item: "జాబితా అంశం"
-      toggle_direction: "దిశను టోగుల్ చేయండి"
       help: "మార్క్ డైన్ సవరణ సహాయం"
       collapse: "కంపోజర్ ప్యానెల్‌ను తగ్గించండి"
       open: "కంపోజర్ ప్యానెల్ తెరవండి"
@@ -2758,7 +2754,6 @@ te:
         one: "విషయంలో %{count} పోస్ట్"
         other: "విషయంలో %{count} పోస్ట్‌లు"
       create: "కొత్త విషయం"
-      create_disabled_category: "ఈ వర్గంలో విషయాలను సృష్టించడానికి మీకు అనుమతి లేదు"
       create_long: "కొత్త విషయం సృష్టించండి"
       open_draft: "చిత్తుప్రతి తెరవండి"
       private_message: "సందేశాన్ని ప్రారంభించండి"
@@ -3459,8 +3454,8 @@ te:
         name: "పేరు"
         description: "వివరణ"
         remove: "తీసివేయండి"
-      tags_allowed_tags: "ఈ ట్యాగ్‌లను ఈ వర్గానికి పరిమితం చేయండి:"
-      tags_allowed_tag_groups: "ఈ ట్యాగ్ సమూహాలను ఈ వర్గానికి పరిమితం చేయండి:"
+      tags_allowed_tags_new_category: "ఈ ట్యాగ్‌లను ఈ వర్గానికి పరిమితం చేయండి:"
+      tags_allowed_tag_groups_new_category: "ఈ ట్యాగ్ సమూహాలను ఈ వర్గానికి పరిమితం చేయండి:"
       tags_placeholder: "(ఐచ్ఛికం) అనుమతించబడిన ట్యాగ్‌ల జాబితా"
       tags_tab_description: "పైన పేర్కొన్న ట్యాగ్‌లు మరియు ట్యాగ్ సమూహాలు ఈ వర్గంలో మరియు వాటిని పేర్కొనే ఇతర వర్గాల్లో మాత్రమే అందుబాటులో ఉంటాయి. ఇతర వర్గాలలో ఉపయోగించడానికి అవి అందుబాటులో ఉండవు."
       tag_groups_placeholder: "(ఐచ్ఛికం) అనుమతించబడిన ట్యాగ్ సమూహాల జాబితా"
@@ -5346,8 +5341,6 @@ te:
           edit: "సవరించండి"
           filters:
             all: "అన్నీ"
-          active_badge:
-            text: "క్రియాశీల"
           about: "మీ థీమ్‌లు ఉపయోగించే రంగులను సవరించండి. ప్రారంభించడానికి కొత్త రంగుల పాలెట్‌ను సృష్టించండి."
           copy_name_prefix: "దీనికి నకలు"
           undo: "రద్దు చేయండి"
