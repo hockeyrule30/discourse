@@ -60,6 +60,8 @@ tr_TR:
   inline_oneboxer:
     topic_page_title_post_number: "#%{post_number}"
     topic_page_title_post_number_by_user: "%{username} tarafından #%{post_number}"
+    too_many_urls: "Tek bir istekte 10’dan fazla URL’yi satır içinde tek kutu olarak ekleyemezsiniz"
+    concurrency_not_allowed: "Eş zamanlı satır içi tek kutulama isteklerine izin verilmez. Lütfen her seferinde bir istek gönderin."
   components:
     enabled_filter: "Etkin"
     disabled_filter: "Devre Dışı"

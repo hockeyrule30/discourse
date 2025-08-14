@@ -1289,7 +1289,7 @@ fr:
       allow_private_messages: "Permettre aux autres utilisateurs de m'envoyer des messages directs"
       external_links_in_new_tab: "Ouvrir tous les liens externes dans un nouvel onglet"
       enable_quoting: "Proposer de citer le texte sélectionné"
-      enable_smart_lists: "Activer les listes intelligentes lors de l'écriture dans le compositeur"
+      enable_smart_lists: "Activer les listes intelligentes lors de la rédaction dans l'éditeur"
       enable_defer: "Activer le marquage des sujets comme non lus"
       experimental_sidebar:
         enable: "Activer la barre latérale"
@@ -1899,7 +1899,7 @@ fr:
           invite_saved_with_sending_email: "Un e-mail d'invitation a été envoyé. Vous pouvez également copier le lien ci-dessous et le partager pour accorder instantanément l'accès à ce site."
         bulk_invite:
           none: "Aucune invitation à afficher sur cette page."
-          text: "Invitation en masse"
+          text: "Invitation groupée"
           instructions: |
             <p>Pour mettre votre communauté sur pied rapidement, invitez une liste d'utilisateurs : composez un <a href="https://en.wikipedia.org/wiki/Comma-separated_values" target="_blank">fichier CSV</a> contenant l'adresse de chaque personne à inviter, en disposant une adresse par ligne. Pour ajouter certaines personnes à des groupes particuliers, ou pour les diriger automatiquement vers un sujet particulier lors de leur première connexion, vous pouvez faire figurer les éléments suivants.</p>
             <pre>jean@dupont.fr,nom_dun_groupe;nom_dun_autre_groupe,identifiant_numérique_du_sujet</pre>
@@ -4375,7 +4375,7 @@ fr:
       manage_groups: "Gérer les groupes d'étiquettes"
       manage_groups_description: "Définir des groupes pour organiser les étiquettes"
       upload: "Envoyer des étiquettes"
-      upload_description: "Envoyer un fichier CSV pour créer des étiquettes en masse"
+      upload_description: "Téléverser un fichier CSV pour créer des étiquettes en bloc"
       upload_instructions: "Une par ligne, éventuellement avec un groupe d'étiquettes sous la forme « tag_name,tag_group »."
       upload_successful: "Étiquettes envoyées avec succès"
       delete_unused_confirmation:
@@ -6979,7 +6979,7 @@ fr:
           title: "Choisissez un badge ou créez-en un nouveau"
           description: "Commencez par sélectionner un badge existant à personnaliser ou créez un nouveau badge"
         mass_award:
-          title: Accorder en masse
+          title: Accorder en bloc
           description: Attribuez le même badge à plusieurs utilisateurs à la fois.
           no_badge_selected: Veuillez sélectionner un badge pour commencer.
           perform: "Attribuer ce badge à ces utilisateurs"

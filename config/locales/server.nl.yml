@@ -1631,6 +1631,7 @@ nl:
     delete_old_hidden_posts: "Verborgen berichten die meer dan 30 dagen verborgen blijven automatisch verwijderen"
     default_locale: "De standaardtaal van deze Discourse-instantie. Je kunt de tekst van door het systeem gegenereerde categorieën en topics vervangen onder <a href='%{base_path}/admin/customize/site_texts' target='_blank'>Aanpassen / Tekst</a>."
     allow_user_locale: "Gebruikers mogen een eigen voorkeur voor de interfacetaal kiezen"
+    set_locale_from_accept_language_header: "Interfacetaal voor anonieme gebruikers instellen vanuit de taalheaders van hun browser"
     set_locale_from_cookie: "Maakt het mogelijk om de taalinstelling van een anonieme gebruiker in te stellen via de browsercookie 'locale'"
     set_locale_from_param: "Maakt het mogelijk om de taalinstelling van een anonieme gebruiker in te stellen via de URL-parameter 'lang', bijvoorbeeld ?lang=es"
     support_mixed_text_direction: "Gemengde links-naar-rechts- en rechts-naar-links-tekstrichtingen ondersteunen"
@@ -1793,6 +1794,7 @@ nl:
     blocked_ip_blocks: "Een lijst van private IP-blokken die nooit door Discourse mogen worden verkend"
     allowed_internal_hosts: "Een lijst van interne hosts die Discourse veilig kan verkennen voor oneboxing en andere doeleinden"
     allowed_onebox_iframes: "Een lijst van iframe-src-domeinen die zijn toegestaan via Onebox-insluitingen. `*` staat alle standaard Onebox-engines toe."
+    allowed_iframes: "Een lijst met iframe src URL-voorvoegsels die Discourse veilig kan toestaan in berichten. * kan worden gebruikt om een willekeurig aantal niet-/tekens te matchen."
     allowed_crawler_user_agents: "Useragents van webcrawlers die toegang tot de website dienen te hebben. WAARSCHUWING! INSTELLEN HIERVAN BLOKKEERT ALLE CRAWLERS DIE HIER NIET WORDEN VERMELD!"
     blocked_crawler_user_agents: "Uniek hoofdletterongevoelig woord in de useragent-string waarmee webcrawlers worden herkend die geen toegang tot de website mogen hebben. Niet van toepassing als toelatingslijst is opgegeven."
     slow_down_crawler_user_agents: 'Useragents van webcrawlers waarvan de snelheid moet worden beperkt, zoals geconfigureerd in de instelling ''crawlersnelheid vertragen''. Elke waarde moet minimaal 3 tekens lang zijn.'

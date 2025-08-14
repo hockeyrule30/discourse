@@ -3004,7 +3004,7 @@ nl:
         bookmarks: "Je hebt nog geen bladwijzers voor topics gemaakt."
         category: "Er zijn geen topics in %{category}."
         top: "Er zijn geen toptopics."
-        hot: "Er zijn geen veelgelezen topics."
+        hot: "Er zijn geen populaire topics."
         filter: "Er zijn geen topics."
         educate:
           new: '<p>Hier worden je nieuwe topics weergegeven. Standaard worden topics als nieuw beschouwd en wordt de indicator <span class="badge new-topic badge-notification" style="vertical-align:middle;line-height:inherit;"></span> weergegeven als ze de afgelopen 2 dagen zijn gemaakt.</p><p>Ga naar je <a href="%{userPrefsUrl}">voorkeuren</a> om dit te wijzigen.</p>'
@@ -3020,7 +3020,7 @@ nl:
         category: "Er zijn verder geen topics in %{category}."
         tag: "Er zijn verder geen topics over %{tag}."
         top: "Er zijn verder geen toptopics."
-        hot: "Er zijn geen veelgelezen topics meer."
+        hot: "Er zijn geen populaire topics meer."
         bookmarks: "Er zijn verder geen topics met bladwijzers."
         filter: "Er zijn geen verdere topics."
     topic_bulk_actions:
@@ -4113,7 +4113,7 @@ nl:
         lower_title: "ongezien"
         help: "nieuwe topics en topics die je momenteel observeert of volgt met ongelezen berichten"
       hot:
-        title: "Veelgelezen"
+        title: "Populair"
         lower_title: "veelgelezen"
         help: "recente veelgelezen topics"
       new:
@@ -5339,6 +5339,9 @@ nl:
           group_permissions: "Groepsmachtigingen"
           users: "Gebruikers"
           groups: "Groepen"
+          localization:
+            title: "Lokalisatie"
+            keywords: "landinstellingen|taal|tijdzone|unicode|ltr"
           user_fields: "Gebruikersvelden"
           watched_words: "Geobserveerde woorden"
           legal: "Juridisch"
@@ -7134,7 +7137,7 @@ nl:
         unread: "Ongelezen"
         top: "Top"
         latest: "Nieuwste"
-        hot: "Veelgelezen"
+        hot: "Populair"
         categories: "Categorieën"
         unseen: "Ongezien"
         read: "Gelezen"
