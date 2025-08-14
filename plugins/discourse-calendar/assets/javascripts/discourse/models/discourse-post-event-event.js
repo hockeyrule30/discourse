@@ -165,6 +165,9 @@ export default class DiscoursePostEventEvent {
     this.isStandalone = event.isStandalone;
     this.minimal = event.minimal;
     this.chatEnabled = event.chatEnabled;
+    // keep capacity fields in sync when server pushes updates
+    this.maxAttendees = event.maxAttendees;
+    this.atCapacity = event.atCapacity;
     this.recurrenceRule = event.recurrenceRule;
     this.recurrence = event.recurrence;
     this.recurrenceUntil = event.recurrenceUntil;
